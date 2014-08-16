@@ -1,12 +1,18 @@
-<html>
-<head>
-   <title>Homestage will be back soon</title>
-</head>
-<body>
-<a id="logo" href="http://www.homestage.us"><img src ="https://s3.amazonaws.com/Homestage/2013/12/homestage_title.png" alt="Homestage Concerts in your house" /></a>
-<h2>Homestage is taking a little break to hit up <a href="http://infestdc.org">INFEST DC<a>, and you should too!</h2>
+<?php
+/**
+ * Front to the WordPress application. This file doesn't do anything, but loads
+ * wp-blog-header.php which does and tells WordPress to load the theme.
+ *
+ * @package WordPress
+ */
 
-<a href="http://infestdc.org"><img src="http://infestdc.org/images/paste.jpg" width=600px/></a>
+/**
+ * Tells WordPress to load the WordPress theme and output it.
+ *
+ * @var bool
+ */
+define('WP_USE_THEMES', true);
 
-</body>
-</html>
+/** Loads the WordPress Environment and Template */
+require( dirname( __FILE__ ) . '/wp-blog-header.php' );
+
