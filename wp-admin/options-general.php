@@ -217,7 +217,7 @@ if ( empty($tzstring) ) { // Create a UTC+- zone if no timezone string exists
 		}
 	}
 	// Set back to UTC.
-	date_default_timezone_set('UTC');
+	date_default_timezone_set('America/New_York');
 	?>
 	</span>
 <?php endif; ?>

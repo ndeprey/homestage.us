@@ -11,7 +11,7 @@ $theEnd = get_theme_mod('themolitor_the_end');
 	<li class="calendarFilter"><a class="allEvents" href="#">All Events</a></li>
 	
 	<?php
-	$cats = wp_list_categories('child_of='.$eventCat.'&title_li=&echo=0&depth=1&orderby=count&order=DESC');
+	$cats = wp_list_categories('title_li=&echo=0&depth=1&orderby=count&order=DESC');
 	if (!strpos($cats,'No categories') ){
 		echo $cats;
 	}
@@ -27,7 +27,7 @@ $prev_year = '';
 $temp = $wp_query;
 $wp_query= null;
 $wp_query = new WP_Query();
-$wp_query->query('order=ASC&cat='.$eventCat.'&showposts=200'.'&paged='.$paged);
+$wp_query->query('orderby=date&cat=-1&order=ASC&showposts=200'.'&paged='.$paged);
 while ($wp_query->have_posts()) : $wp_query->the_post(); 
 
 //CHECK IF EVENT HAS EXPIRED
