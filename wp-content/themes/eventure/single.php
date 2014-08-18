@@ -140,10 +140,7 @@ if(in_category($eventCat)){ echo '<div itemscope itemtype="http://data-vocabular
         </div><!--end entry-->
         
         <br />
-                    
-        <div id="commentsection">
-			<?php comments_template(); ?>
-        </div>
+        
 			
 	</div><!--end post-->
 	
