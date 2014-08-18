@@ -2,6 +2,7 @@
 //VAR SETUP
 $eventCat = get_option('themolitor_events_category');
 $theEnd = get_theme_mod('themolitor_the_end');
+$todaysdate = getdate();
 ?>
 
 <!--FILTER-->
