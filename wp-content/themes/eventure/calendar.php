@@ -28,7 +28,7 @@ $prev_year = '';
 $temp = $wp_query;
 $wp_query= null;
 $wp_query = new WP_Query();
-$wp_query->query('orderby=date&cat=-1&order=ASC&showposts=200'.'&paged='.$paged);
+$wp_query->query('orderby=date&cat=-1&order=ASC&showposts=2000');
 while ($wp_query->have_posts()) : $wp_query->the_post(); 
 
 //CHECK IF EVENT HAS EXPIRED
